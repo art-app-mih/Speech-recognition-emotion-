@@ -1,1 +1,3 @@
 # Speech-recognition-emotion-
+
+A system for recognizing the emotional state of the speaker by voice. For feature extraction, an autoencoder neural network was used, to which the original acoustic signal was fed. An autoencoder consists of encoder and decoder submodels. The encoder compresses the input, and the decoder tries to recreate the input from the compressed version provided by the encoder. After training, the encoder model is saved and the decoder is discarded. The encoder can then be used as a data preparation method to extract features from the raw data, which can be used to train another machine learning model (as in this paper). The code was written in MATLAB. A graphical interface has also been created for using this system.
